@@ -8,7 +8,7 @@ const Culturist = () => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
 
-  // Load data from localStorage on component mount
+  
   useEffect(() => {
     const savedLikes = JSON.parse(localStorage.getItem('culturist-likes') || '{}');
     const savedComments = JSON.parse(localStorage.getItem('culturist-comments') || '[]');
@@ -16,7 +16,7 @@ const Culturist = () => {
     setComments(savedComments);
   }, []);
 
-  // Save to localStorage whenever likes or comments change
+  
   useEffect(() => {
     localStorage.setItem('culturist-likes', JSON.stringify(likes));
   }, [likes]);
@@ -25,7 +25,7 @@ const Culturist = () => {
     localStorage.setItem('culturist-comments', JSON.stringify(comments));
   }, [comments]);
 
-  // Static data for Indian states, cities, and seasonal information
+  
   const travelData = {
    TamilNadu: {
   cities: {
