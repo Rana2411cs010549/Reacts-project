@@ -29,7 +29,7 @@ const Culturist = () => {
   const travelData = {
    TamilNadu: {
   cities: {
-    Chenna: {
+    Chennai: {
       Winter: {
         festivals: ['Pongal', 'Music Season Festival', 'Christmas'],
         food: ['Sambar', 'Filter Coffee', 'Dosa', 'Murukku'],
